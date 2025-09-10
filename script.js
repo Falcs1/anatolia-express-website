@@ -168,7 +168,7 @@ function switchLanguage(lang) {
     languageLoadingScreen.innerHTML = `
         <div class="loading-content">
             <div class="logo-container">
-                <img src="images/Varlık 1@4x.jpg" alt="Anatolia Express LLC" class="loading-logo">
+                <img src="images/Varlık 3@4x-100.jpg" alt="Anatolia Express LLC" class="loading-logo">
             </div>
             <div class="loading-text">
                 <h2>${translations[lang].loading_text || 'Loading...'}</h2>
@@ -186,14 +186,16 @@ function switchLanguage(lang) {
         left: 0;
         width: 100%;
         height: 100%;
-        background: var(--gradient);
+        background: var(--white-color);
+        border: 3px solid var(--gold-color);
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 9998;
         opacity: 0;
         transition: opacity 0.3s ease;
-        color: white;
+        color: var(--text-color);
+        box-sizing: border-box;
     `;
     
     document.body.appendChild(languageLoadingScreen);
