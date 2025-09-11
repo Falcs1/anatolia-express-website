@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anatolia Express LLC</title>
+    <title>Anatolia Express - Professional Global Consulting Services</title>
+    <meta name="description" content="Leading global consulting firm based in Kosovo, providing professional services in HR, Legal, Financial consulting and Global solutions.">
+    <meta name="keywords" content="consulting, Kosovo, global services, HR consulting, legal consulting, financial consulting">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,10 +15,10 @@
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-content">
             <div class="logo-container">
-                <img src="images/Varlık 3@4x-100.jpg" alt="Anatolia Express LLC" class="loading-logo">
+                <img src="images/Varlık 3@4x-100.jpg" alt="Anatolia Express" class="loading-logo">
             </div>
             <div class="loading-text">
-                <h2 data-translate="loading_text">Loading...</h2>
+                <h2 data-translate="loading_text">Yükleniyor...</h2>
             </div>
             <div class="loading-spinner">
                 <div class="spinner"></div>
@@ -28,16 +30,16 @@
     <div class="language-switcher">
         <div class="flag-container">
             <img src="https://flagcdn.com/w40/al.png" alt="Albanian" class="flag" data-lang="al" title="Shqip">
-            <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag active" data-lang="en" title="English">
-            <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" class="flag" data-lang="tr" title="Türkçe">
+            <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag" data-lang="en" title="English">
+            <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" class="flag active" data-lang="tr" title="Türkçe">
         </div>
     </div>
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/38349236441" target="_blank" title="Chat with us on WhatsApp">
+        <a href="https://wa.me/38349236441" target="_blank" title="WhatsApp ile iletişime geçin">
             <i class="fab fa-whatsapp"></i>
-            <span class="whatsapp-text" data-translate="whatsapp_text">Chat with us</span>
+            <span class="whatsapp-text" data-translate="whatsapp_text">Bizimle sohbet edin</span>
         </a>
     </div>
 
@@ -45,155 +47,488 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="images/Varlık 3@4x-100.jpg" alt="Anatolia Express LLC" class="logo-img">
-                <h1>Anatolia Express LLC</h1>
+                <div class="logo-container">
+                    <img src="images/Varlık 3@4x-100.jpg" alt="Anatolia Express" class="header-logo">
+                </div>
+                <div class="logo-text">
+                    <h1>ANATOLIA EXPRESS</h1>
+                    <p class="tagline" data-translate="header_tagline">Professional Global Consulting</p>
+                </div>
             </div>
             <nav class="nav">
                 <ul>
+                    <li><a href="#home" data-translate="nav_home">Home</a></li>
                     <li><a href="#about" data-translate="nav_about">About Us</a></li>
-                    <li><a href="#address" data-translate="nav_address">Address</a></li>
-                    <li><a href="#participations" data-translate="nav_participations">Participations</a></li>
+                    <li><a href="#services" data-translate="nav_services">Services</a></li>
+                    <li><a href="#stats" data-translate="nav_achievements">Achievements</a></li>
+                    <li><a href="#testimonials" data-translate="nav_testimonials">Testimonials</a></li>
+                    <li><a href="#contact" class="contact-btn" data-translate="nav_contact">GET CONSULTATION</a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h2 data-translate="hero_title">Welcome to Anatolia Express LLC</h2>
-                <p data-translate="hero_subtitle">Your trusted partner in corporate excellence and logistics solutions</p>
-                <a href="#about" class="cta-button" data-translate="hero_cta">Learn More</a>
+                <div class="hero-text">
+                    <h1 data-translate="hero_title">Leading Global<br>Consulting Solutions<br>for Your Business</h1>
+                    <p data-translate="hero_subtitle">Empowering businesses across the Balkans and Europe with strategic consulting services that drive growth, ensure compliance, and unlock global opportunities.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="cta-button primary" data-translate="hero_cta_primary">Get Free Consultation</a>
+                        <a href="#services" class="cta-button secondary" data-translate="hero_cta_secondary">Explore Services</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="hero_feature_1">Expert Consultants</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="hero_feature_2">Proven Track Record</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="hero_feature_3">24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="professional-image">
+                        <div class="business-person">
+                            <div class="consultation-scene">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Growth</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-globe"></i>
+                                <span>Global</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Statistics Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-number" data-number="150">150+</div>
+                    <div class="stat-label" data-translate="stat_clients">Satisfied Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-number" data-number="95">95%</div>
+                    <div class="stat-label" data-translate="stat_success">Success Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number" data-number="15">15+</div>
+                    <div class="stat-label" data-translate="stat_countries">Countries Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number" data-number="5">5+</div>
+                    <div class="stat-label" data-translate="stat_experience">Years Experience</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
-                <h2 data-translate="about_title">About Us</h2>
-                <div class="divider"></div>
+                <span class="section-badge" data-translate="about_badge">About Anatolia Express</span>
+                <h2 data-translate="about_title">Your Trusted Global Consulting Partner</h2>
+                <p data-translate="about_subtitle">Bridging businesses across the Balkans and Europe with strategic consulting excellence</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3 data-translate="about_company_title">Anatolia Express LLC</h3>
-                    <p data-translate="about_description">
-                        Anatolia Express LLC is a leading corporate entity dedicated to providing exceptional 
-                        services and solutions. With our commitment to excellence and innovation, we have 
-                        established ourselves as a trusted partner in the industry.
-                    </p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="feature_1">Professional Excellence</span>
+                    <div class="about-features">
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-translate="about_feature_1_title">Excellence in Service</h4>
+                                <p data-translate="about_feature_1_desc">We deliver exceptional consulting services with a focus on quality, reliability, and measurable results for our clients.</p>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="feature_2">Global Reach</span>
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-translate="about_feature_2_title">Expert Team</h4>
+                                <p data-translate="about_feature_2_desc">Our team consists of seasoned professionals with extensive experience in their respective fields and deep market knowledge.</p>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-translate="feature_3">Innovative Solutions</span>
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 data-translate="about_feature_3_title">Proven Results</h4>
+                                <p data-translate="about_feature_3_desc">We have a track record of helping businesses achieve their goals through strategic consulting and innovative solutions.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-building"></i>
+                    <div class="professional-team">
+                        <div class="team-illustration">
+                            <i class="fas fa-building"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Address Section -->
-    <section id="address" class="address">
+    <!-- Services Section -->
+    <section id="services" class="services-section">
         <div class="container">
             <div class="section-header">
-                <h2 data-translate="address_title">Our Address</h2>
-                <div class="divider"></div>
+                <span class="section-badge" data-translate="services_badge">Our Expertise</span>
+                <h2 data-translate="services_title">Professional Consulting Services</h2>
+                <p data-translate="services_subtitle">Comprehensive solutions tailored to drive your business success across global markets</p>
             </div>
-            <div class="address-content">
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <span class="service-badge" data-translate="service_popular">Most Popular</span>
+                    </div>
+                    <h3 data-translate="service_hr_title">Human Resources Consulting</h3>
+                    <p data-translate="service_hr_desc">Strategic talent acquisition, workforce planning, and HR optimization solutions to build high-performing teams.</p>
+                    <ul class="service-features">
+                        <li data-translate="service_hr_feature_1">Talent Acquisition & Recruitment</li>
+                        <li data-translate="service_hr_feature_2">Performance Management Systems</li>
+                        <li data-translate="service_hr_feature_3">Employee Training & Development</li>
+                        <li data-translate="service_hr_feature_4">Compensation & Benefits Strategy</li>
+                    </ul>
+                    <a href="#contact" class="service-cta" data-translate="service_learn_more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    <h3 data-translate="service_legal_title">Legal Consulting</h3>
+                    <p data-translate="service_legal_desc">Expert legal guidance for business operations, compliance, and strategic legal planning across jurisdictions.</p>
+                    <ul class="service-features">
+                        <li data-translate="service_legal_feature_1">Corporate Law & Governance</li>
+                        <li data-translate="service_legal_feature_2">Contract Negotiation & Review</li>
+                        <li data-translate="service_legal_feature_3">Regulatory Compliance</li>
+                        <li data-translate="service_legal_feature_4">International Business Law</li>
+                    </ul>
+                    <a href="#contact" class="service-cta" data-translate="service_learn_more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3 data-translate="service_finance_title">Financial Consulting</h3>
+                    <p data-translate="service_finance_desc">Strategic financial planning, analysis, and advisory services to optimize your business financial performance.</p>
+                    <ul class="service-features">
+                        <li data-translate="service_finance_feature_1">Financial Planning & Analysis</li>
+                        <li data-translate="service_finance_feature_2">Investment Strategy Advisory</li>
+                        <li data-translate="service_finance_feature_3">Risk Management Solutions</li>
+                        <li data-translate="service_finance_feature_4">Mergers & Acquisitions Support</li>
+                    </ul>
+                    <a href="#contact" class="service-cta" data-translate="service_learn_more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div>
+                    <h3 data-translate="service_global_title">Global Business Solutions</h3>
+                    <p data-translate="service_global_desc">International market entry strategies, cross-border partnerships, and global expansion consulting services.</p>
+                    <ul class="service-features">
+                        <li data-translate="service_global_feature_1">Market Entry Strategies</li>
+                        <li data-translate="service_global_feature_2">International Partnerships</li>
+                        <li data-translate="service_global_feature_3">Cross-Border Transactions</li>
+                        <li data-translate="service_global_feature_4">Cultural Integration Support</li>
+                    </ul>
+                    <a href="#contact" class="service-cta" data-translate="service_learn_more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Solutions Section -->
+    <section id="global" class="global-section">
+        <div class="container">
+            <div class="global-content">
+                <div class="global-text">
+                    <h2 data-translate="global_title">GLOBAL ÇÖZÜMLER</h2>
+                    <p data-translate="global_text">Anatolia Express, stratejik ortaklıklar<br>geliştirerek global pazarlarda<br>çözümler sunar.</p>
+                    <a href="#contact" class="arrow-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="global-map">
+                    <div class="world-map">
+                        <div class="map-background">
+                            <div class="continents">
+                                <div class="continent north-america"></div>
+                                <div class="continent europe"></div>
+                                <div class="continent asia"></div>
+                                <div class="continent africa"></div>
+                                <div class="continent south-america"></div>
+                                <div class="continent australia"></div>
+                            </div>
+                            <div class="map-points">
+                                <div class="point point-1"></div>
+                                <div class="point point-2"></div>
+                                <div class="point point-3"></div>
+                                <div class="point point-4"></div>
+                                <div class="point point-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-translate="testimonials_badge">Client Success Stories</span>
+                <h2 data-translate="testimonials_title">What Our Clients Say</h2>
+                <p data-translate="testimonials_subtitle">Trusted by businesses across the Balkans and Europe</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-translate="testimonial_1_text">"Anatolia Express transformed our HR processes completely. Their expertise in talent acquisition helped us build a world-class team that drove our company to new heights."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4 data-translate="testimonial_1_name">Marko Petrović</h4>
+                                <span data-translate="testimonial_1_title">CEO, TechVision Solutions</span>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-translate="testimonial_2_text">"The legal consulting services provided by Anatolia Express were exceptional. They guided us through complex international regulations with professionalism and expertise."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4 data-translate="testimonial_2_name">Sarah Mitchell</h4>
+                                <span data-translate="testimonial_2_title">Legal Director, Global Ventures Ltd</span>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-translate="testimonial_3_text">"Their financial consulting expertise helped us optimize our operations and achieve 40% cost reduction while maintaining quality. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4 data-translate="testimonial_3_name">Ahmed Krasniqi</h4>
+                                <span data-translate="testimonial_3_title">CFO, Balkan Industries</span>
+                                <div class="author-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-logos">
+                <div class="client-logo">
+                    <span data-translate="client_1">TechVision</span>
+                </div>
+                <div class="client-logo">
+                    <span data-translate="client_2">Global Ventures</span>
+                </div>
+                <div class="client-logo">
+                    <span data-translate="client_3">Balkan Industries</span>
+                </div>
+                <div class="client-logo">
+                    <span data-translate="client_4">EuroTrade</span>
+                </div>
+                <div class="client-logo">
+                    <span data-translate="client_5">Innovation Hub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-translate="contact_badge">Get In Touch</span>
+                <h2 data-translate="contact_title">Start Your Business Transformation</h2>
+                <p data-translate="contact_subtitle">Ready to take your business to the next level? Our expert consultants are here to help you succeed.</p>
+            </div>
+            <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4 data-translate="address_label">Head Office</h4>
-                            <p data-translate="address_street">Rruga Luan Haradinaj, H 110</p>
-                            <p data-translate="address_details">Kati 3, Nr.6</p>
-                            <p data-translate="address_city">Prishtine</p>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact_office">Head Office</h4>
+                            <p>Rruga Luan Haradinaj, H 110</p>
+                            <p>Kati 3, Nr.6</p>
+                            <p>Prishtine, Kosovo</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4 data-translate="phone_label">Phone</h4>
-                            <p>+383 49 236 441</p>
-                            <p>+383 49 236 252</p>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact_phone">Phone</h4>
+                            <p><a href="tel:+38349236441">+383 49 236 441</a></p>
+                            <p><a href="tel:+38349236252">+383 49 236 252</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4 data-translate="email_label">Email</h4>
-                            <p>info@expressanatolia.com</p>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact_email">Email</h4>
+                            <p><a href="mailto:info@expressanatolia.com">info@expressanatolia.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact_hours">Business Hours</h4>
+                            <p data-translate="contact_weekdays">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            <p data-translate="contact_weekend">Sat: 10:00 AM - 2:00 PM</p>
                         </div>
                     </div>
                 </div>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2996.0!2d21.159972!3d42.662389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDM5JzQ0LjYiTiAyMcKwMDknMzUuOSJF!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Anatolia Express LLC Location">
-                    </iframe>
+                <div class="contact-form">
+                    <div class="form-header">
+                        <h3 data-translate="form_title">Contact Us</h3>
+                        <p data-translate="form_subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    <form class="consultation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-translate="form_name_label">Full Name *</label>
+                                <input type="text" name="name" data-translate="form_name" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-translate="form_email_label">Email Address *</label>
+                                <input type="email" name="email" data-translate="form_email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="form_phone_label">Phone Number</label>
+                            <input type="tel" name="phone" data-translate="form_phone" placeholder="+383 XX XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="form_message_label">Message *</label>
+                            <textarea name="message" data-translate="form_message" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy" data-translate="form_privacy">I agree to the privacy policy and terms of service *</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-translate="form_submit">Send Message</span>
+                        </button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Participations Section -->
-    <section id="participations" class="participations">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-translate="participations_title">Our Participations</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="participations-grid">
-                <div class="participation-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3 data-translate="participation_1_title">Strategic Partnerships</h3>
-                    <p data-translate="participation_1_desc">
-                        We maintain strategic partnerships with leading companies across various industries.
-                    </p>
-                </div>
-                <div class="participation-card">
-                    <i class="fas fa-award"></i>
-                    <h3 data-translate="participation_2_title">Industry Awards</h3>
-                    <p data-translate="participation_2_desc">
-                        Recognized for excellence in service delivery and innovative business solutions.
-                    </p>
-                </div>
-                <div class="participation-card">
-                    <i class="fas fa-users"></i>
-                    <h3 data-translate="participation_3_title">Professional Networks</h3>
-                    <p data-translate="participation_3_desc">
-                        Active member of professional organizations and business networks.
-                    </p>
-                </div>
-                <div class="participation-card">
-                    <i class="fas fa-globe"></i>
-                    <h3 data-translate="participation_4_title">International Presence</h3>
-                    <p data-translate="participation_4_desc">
-                        Expanding our reach through international collaborations and joint ventures.
-                    </p>
-                </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2996.0!2d21.159972!3d42.662389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDM5JzQ0LjYiTiAyMcKwMDknMzUuOSJF!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Anatolia Express Location">
+                </iframe>
             </div>
         </div>
     </section>
@@ -203,20 +538,78 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Anatolia Express LLC</h3>
-                    <p data-translate="footer_description">Your trusted corporate partner</p>
+                    <div class="footer-logo">
+                        <img src="images/Varlık 3@4x-100.jpg" alt="Anatolia Express" class="footer-logo-img">
+                        <h3>Anatolia Express</h3>
+                    </div>
+                    <p data-translate="footer_description">Your trusted global consulting partner, bridging businesses from the Balkans to Europe with strategic excellence and proven results.</p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span data-translate="footer_cert_1">ISO 9001:2015</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-translate="footer_cert_2">Data Protected</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-links">
+                <div class="footer-services">
+                    <h4 data-translate="footer_services">Our Services</h4>
+                    <ul>
+                        <li><a href="#services" data-translate="service_hr">Human Resources Consulting</a></li>
+                        <li><a href="#services" data-translate="service_legal">Legal Consulting</a></li>
+                        <li><a href="#services" data-translate="service_finance">Financial Consulting</a></li>
+                        <li><a href="#services" data-translate="service_global">Global Business Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-quick-links">
+                    <h4 data-translate="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-translate="footer_about">About Us</a></li>
+                        <li><a href="#testimonials" data-translate="footer_testimonials">Testimonials</a></li>
+                        <li><a href="#contact" data-translate="footer_careers">Careers</a></li>
+                        <li><a href="#contact" data-translate="footer_blog">Blog</a></li>
+                        <li><a href="#contact" data-translate="footer_privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-translate="footer_contact_title">Contact Info</h4>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Rruga Luan Haradinaj, H 110</p>
+                            <p>Kati 3, Nr.6, Prishtine, Kosovo</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p><a href="tel:+38349236441">+383 49 236 441</a></p>
+                            <p><a href="tel:+38349236252">+383 49 236 252</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@expressanatolia.com">info@expressanatolia.com</a></p>
+                    </div>
                     <div class="social-links">
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Anatolia Express LLC. <span data-translate="footer_rights">All rights reserved.</span></p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Anatolia Express. <span data-translate="footer_rights">All rights reserved.</span></p>
+                    <div class="footer-bottom-links">
+                        <a href="#" data-translate="footer_terms">Terms of Service</a>
+                        <a href="#" data-translate="footer_privacy">Privacy Policy</a>
+                        <a href="#" data-translate="footer_cookies">Cookie Policy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
