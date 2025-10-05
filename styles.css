@@ -67,63 +67,35 @@ body {
 
 .loading-content {
     text-align: center;
-    color: var(--primary-color);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 
 .logo-container {
-    margin-bottom: 40px;
     background: #ffffff;
-    padding: 25px;
-    border-radius: 20px;
+    padding: 60px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    border: 2px solid #e2e8f0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border: 3px solid #e2e8f0;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .loading-logo {
-    width: 140px;
+    width: 300px;
     height: auto;
     object-fit: contain;
     display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.loading-text {
-    margin-bottom: 30px;
-}
-
-.loading-text h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 0;
-    color: var(--primary-color);
-    letter-spacing: 0.5px;
-}
-
-.loading-spinner {
-    margin-top: 10px;
-}
-
-.spinner {
-    width: 45px;
-    height: 45px;
-    border: 4px solid rgba(255, 255, 255, 0.2);
-    border-top: 4px solid var(--gold-yellow);
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: spin 1.2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
 /* Language Switcher */
 .language-switcher {
@@ -2200,16 +2172,14 @@ body {
     }
     
     .loading-logo {
-        width: 120px;
+        width: 200px;
     }
     
     .logo-container {
-        padding: 20px;
-        margin-bottom: 35px;
-    }
-    
-    .loading-text h2 {
-        font-size: 1.4rem;
+        padding: 40px;
+        border-radius: 20px;
+        max-width: 95%;
+        max-height: 95%;
     }
 }
 
@@ -2519,22 +2489,14 @@ body {
     }
     
     .loading-logo {
-        width: 100px;
+        width: 150px;
     }
     
     .logo-container {
-        padding: 18px;
-        margin-bottom: 30px;
-    }
-    
-    .loading-text h2 {
-        font-size: 1.2rem;
-    }
-    
-    .spinner {
-        width: 35px;
-        height: 35px;
-        border-width: 3px;
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 90%;
+        max-height: 90%;
     }
 }
 
