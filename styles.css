@@ -54,6 +54,7 @@ body {
     height: 100%;
     background: #ffffff;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 9999;
@@ -65,12 +66,33 @@ body {
     visibility: hidden;
 }
 
+.loading-quadrangle {
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+    transform: skew(-20deg);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+
+.top-quadrangle {
+    margin-bottom: auto;
+    margin-top: 50px;
+    animation: slideInTop 1s ease-out;
+}
+
+.bottom-quadrangle {
+    margin-top: auto;
+    margin-bottom: 50px;
+    animation: slideInBottom 1s ease-out;
+}
+
 .loading-content {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    flex: 1;
     width: 100%;
 }
 
@@ -96,6 +118,28 @@ body {
     max-height: 100%;
 }
 
+
+@keyframes slideInTop {
+    0% {
+        transform: skew(-20deg) translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: skew(-20deg) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: skew(-20deg) translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: skew(-20deg) translateY(0);
+        opacity: 1;
+    }
+}
 
 /* Language Switcher */
 .language-switcher {
@@ -2181,6 +2225,19 @@ body {
         max-width: 95%;
         max-height: 95%;
     }
+    
+    .loading-quadrangle {
+        width: 150px;
+        height: 45px;
+    }
+    
+    .top-quadrangle {
+        margin-top: 30px;
+    }
+    
+    .bottom-quadrangle {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -2497,6 +2554,19 @@ body {
         border-radius: 15px;
         max-width: 90%;
         max-height: 90%;
+    }
+    
+    .loading-quadrangle {
+        width: 120px;
+        height: 35px;
+    }
+    
+    .top-quadrangle {
+        margin-top: 20px;
+    }
+    
+    .bottom-quadrangle {
+        margin-bottom: 20px;
     }
 }
 
